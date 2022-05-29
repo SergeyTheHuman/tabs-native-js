@@ -9,23 +9,23 @@ html(lang="ru")
 	body
 		include components/header
 
-		.my-tabs.tabs
-			ul.my-tabs__buttons
-				li.my-tabs__button.my-tabs__button--active(data-tabs-path='first') Первый
-				li.my-tabs__button(data-tabs-path='second') Второй
-				li.my-tabs__button(data-tabs-path='third') Третий
-			.my-tabs__item.my-tabs__item--active(data-tabs-target='first')
-				.my-tabs__content 
-					.my-tabs__title Первый
-					.my-tabs__text Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus impedit possimus, tenetur sint cupiditate earum, voluptatibus tempore magni aperiam qui praesentium maiores recusandae? Nisi officiis ex nesciunt accusamus sit temporibus.
-			.my-tabs__item(data-tabs-target='second') 
-				.my-tabs__content 
-					.my-tabs__title Второй
-					.my-tabs__text Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus impedit possimus, tenetur sint cupiditate earum
-			.my-tabs__item(data-tabs-target='third') 
-				.my-tabs__content 
-					.my-tabs__title Третий
-					.my-tabs__text Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus impedit possimus, tenetur sint cupiditate earum, voluptatibus tempore magni aperiam qui praesentium maiores recusandae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus impedit possimus, tenetur sint cupiditate earum, voluptatibus tempore magni aperiam qui praesentium maiores recusandae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus impedit possimus, tenetur sint cupiditate earum, voluptatibus tempore magni aperiam qui praesentium maiores recusandae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus impedit possimus, tenetur sint cupiditate earum, voluptatibus tempore magni aperiam qui praesentium maiores recusandae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus impedit possimus, tenetur sint cupiditate earum, voluptatibus tempore magni aperiam qui praesentium maiores recusandae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus impedit possimus, tenetur sint cupiditate earum, voluptatibus tempore magni aperiam qui praesentium maiores recusandae? 
+		.tabs
+			ul.tabs__buttons
+				li.tabs__button.tabs__button--active(data-tabs-path='first') Первый
+				li.tabs__button(data-tabs-path='second') Второй
+				li.tabs__button(data-tabs-path='third') Третий
+			.tabs__item.tabs__item--active(data-tabs-target='first')
+				.tabs__content 
+					.tabs__title Первый
+					.tabs__text Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus impedit possimus, tenetur sint cupiditate earum, voluptatibus tempore magni aperiam qui praesentium maiores recusandae? Nisi officiis ex nesciunt accusamus sit temporibus.
+			.tabs__item(data-tabs-target='second') 
+				.tabs__content 
+					.tabs__title Второй
+					.tabs__text Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus impedit possimus, tenetur sint cupiditate earum
+			.tabs__item(data-tabs-target='third') 
+				.tabs__content 
+					.tabs__title Третий
+					.tabs__text Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus impedit possimus, tenetur sint cupiditate earum, voluptatibus tempore magni aperiam qui praesentium maiores recusandae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus impedit possimus, tenetur sint cupiditate earum, voluptatibus tempore magni aperiam qui praesentium maiores recusandae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus impedit possimus, tenetur sint cupiditate earum, voluptatibus tempore magni aperiam qui praesentium maiores recusandae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus impedit possimus, tenetur sint cupiditate earum, voluptatibus tempore magni aperiam qui praesentium maiores recusandae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus impedit possimus, tenetur sint cupiditate earum, voluptatibus tempore magni aperiam qui praesentium maiores recusandae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus impedit possimus, tenetur sint cupiditate earum, voluptatibus tempore magni aperiam qui praesentium maiores recusandae? 
 		
 		include components/footer
 		script(src='js/app.min.js')
