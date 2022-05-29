@@ -11,3 +11,49 @@
 @import components/header
 @import components/footer
 
+body
+	padding-top: 100px
+	background-color: #5a5a5a
+	display: flex
+	justify-content: center
+
+.tabs
+	width: 600px
+	height: 300px
+	&__buttons
+		display: flex
+		align-items: center
+	&__button
+		padding: 10px 30px
+		font-size: 25px
+		background-color: plum
+		border-top-left-radius: 10px
+		border-top-right-radius: 10px
+		transition: $transition
+		background-color: #a0a0a0
+		color: $color-black
+		&--active
+			background-color: plum
+			pointer-events: none
+		&:not(.tabs__button--active)
+			cursor: pointer
+			&:hover
+				background-color: darken(plum, 50)
+				color: $color-white
+		&:not(:last-child)
+			margin-right: 15px
+	&__item
+		height: 100%
+		background-color: plum
+		display: flex
+		justify-content: center
+		align-items: center
+		font-size: 20px
+		padding: 50px
+		display: none
+		&--active
+			overflow-y: auto
+			display: block
+	&__title
+		font-size: 25px
+		margin-bottom: 1em
